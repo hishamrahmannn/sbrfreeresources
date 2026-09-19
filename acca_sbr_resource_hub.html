@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCA SBR Resource Hub | Hisham Rahman</title>
+<meta name="description" content="Free ACCA Strategic Business Reporting (SBR) revision resources, standards notes, planner, quizzes, examiner insights and Kaplan Kit question mapping.">
+<style>
+:root{
+  --bg:#f7f9fc; --card:#ffffff; --text:#182230; --muted:#667085;
+  --primary:#7c3aed; --primary2:#5b21b6; --soft:#f1ebff;
+  --line:#e7eaf0; --green:#087f5b; --red:#c92a2a; --shadow:0 10px 30px rgba(24,34,48,.07);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{max-width:1180px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navbar{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;font-size:19px}.logo span{color:var(--primary)}
+.navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.navlinks a{font-size:14px;color:#475467}.navlinks a:hover{color:var(--primary)}
+.hero{padding:72px 0 52px;background:linear-gradient(135deg,#faf7ff 0%,#f7f9fc 55%,#eef8ff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:var(--soft);color:var(--primary2);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:48px;line-height:1.08;margin:16px 0 18px;letter-spacing:-1.5px}
+.hero p{font-size:18px;color:var(--muted);max-width:700px}
+.buttons{display:flex;gap:12px;margin-top:25px;flex-wrap:wrap}
+.btn{padding:12px 17px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:14px;background:#fff}
+.btn.primary{background:var(--primary);color:white;border-color:var(--primary)}
+.btn.primary:hover{background:var(--primary2)}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
+.hero-card h3{margin-top:0}.stat{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.stat:last-child{border:0}
+section{padding:55px 0}.section-head{margin-bottom:25px}.section-head h2{margin:0 0 7px;font-size:29px}.section-head p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 5px 20px rgba(24,34,48,.04)}
+.card h3{margin:0 0 8px;font-size:18px}.card p{color:var(--muted);font-size:14px}
+.tag{display:inline-block;font-size:11px;font-weight:800;padding:4px 8px;border-radius:6px;background:#f2f4f7;color:#475467;margin:3px 3px 3px 0}
+.search{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font-size:15px;margin:0 0 16px;outline:none}.search:focus{border-color:var(--primary)}
+.standard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.std{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;transition:.15s}.std:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.std strong{display:block;font-size:13px}.std span{font-size:12px;color:var(--muted)}
+.note{display:none;margin-top:12px;padding:13px;background:#faf7ff;border-radius:10px;font-size:13px}.std.open .note{display:block}
+.important{border-left:4px solid var(--primary)}
+.planner{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.day{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.day b{color:var(--primary)}.day p{font-size:13px;color:var(--muted);margin:7px 0 0}
+.quiz{margin-top:15px}.question{padding:17px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px}
+.options button{display:block;width:100%;text-align:left;margin:7px 0;padding:10px;border:1px solid var(--line);background:#fff;border-radius:8px;cursor:pointer}.options button:hover{background:#f8f5ff}.answer{display:none;margin-top:10px;padding:11px;border-radius:8px;background:#ecfdf3;color:#166534;font-size:13px}.question.revealed .answer{display:block}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{text-align:left;padding:13px;border-bottom:1px solid var(--line);font-size:13px}th{background:#f8fafc}tr:last-child td{border-bottom:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.callout{background:linear-gradient(135deg,#6d28d9,#8b5cf6);color:#fff;border-radius:18px;padding:27px}.callout p{color:#ede9fe}
+footer{padding:35px 0;background:#111827;color:#d1d5db;margin-top:30px}footer p{font-size:13px;margin:5px 0}
+.disclaimer{font-size:12px;color:#98a2b3;margin-top:10px}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.standard-grid{grid-template-columns:1fr 1fr}.planner{grid-template-columns:1fr 1fr}h1{font-size:38px}.navlinks{display:none}}
+@media(max-width:560px){.grid,.standard-grid,.planner{grid-template-columns:1fr}.hero{padding-top:45px}h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container navbar">
+  <div class="logo">SBR<span> Resource Hub</span></div>
+  <div class="navlinks">
+    <a href="#standards">Standards</a><a href="#planner">15-Day Plan</a><a href="#quiz">Quiz</a>
+    <a href="#kit">Kit Map</a><a href="#about">About</a>
+  </div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="badge">FREE • ACCA SBR REVISION HUB</span>
+    <h1>Study SBR with clarity, not chaos.</h1>
+    <p>A simple revision website for ACCA Strategic Business Reporting: ultra-short IAS/IFRS notes, high-priority standards, a final 15-day planner, quizzes, examiner-report lessons and a question-to-standard map.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#standards">Explore Standards</a>
+      <a class="btn" href="#planner">Start 15-Day Revision</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <h3>What you'll find</h3>
+    <div class="stat"><span>IAS / IFRS quick notes</span><b>✓</b></div>
+    <div class="stat"><span>Important standards</span><b>✓</b></div>
+    <div class="stat"><span>15-day revision plan</span><b>✓</b></div>
+    <div class="stat"><span>Standard-wise quizzes</span><b>✓</b></div>
+    <div class="stat"><span>Examiner insights</span><b>✓</b></div>
+    <div class="stat"><span>Kit question mapping</span><b>✓</b></div>
+  </div>
+</div>
+</header>
+
+<section id="standards">
+<div class="container">
+  <div class="section-head"><h2>IAS & IFRS — very short notes</h2><p>Click a standard to reveal a quick revision point. Use these as memory triggers, not as a replacement for the full syllabus or current ACCA materials.</p></div>
+  <input class="search" id="stdSearch" placeholder="Search standard e.g. IAS 16, IFRS 15, impairment...">
+  <div class="standard-grid" id="standardGrid">
+    <div class="std important" data-search="ias 1 presentation financial statements"><strong>IAS 1 — Presentation</strong><span>Structure, classification & disclosure</span><div class="note">Focus on presentation, current/non-current classification, going concern and material information. Check current IFRS requirements because IFRS 18 changes presentation from 2027.</div></div>
+    <div class="std important" data-search="ias 2 inventories"><strong>IAS 2 — Inventories</strong><span>Lower of cost and NRV</span><div class="note">Cost includes purchase/conversion and other costs to bring inventory to present condition. Measure at lower of cost and NRV.</div></div>
+    <div class="std important" data-search="ias 7 cash flows"><strong>IAS 7 — Cash Flows</strong><span>Operating, investing, financing</span><div class="note">Classify cash flows into operating, investing and financing. SBR often tests classification, presentation and interpretation.</div></div>
+    <div class="std important" data-search="ias 8 accounting policies estimates errors"><strong>IAS 8 — Policies, Estimates & Errors</strong><span>Retrospective vs prospective</span><div class="note">Policy changes are generally retrospective; estimate changes are prospective. Prior-period errors are corrected retrospectively, subject to practicability.</div></div>
+    <div class="std important" data-search="ias 10 events after reporting period"><strong>IAS 10 — Events After Reporting</strong><span>Adjusting vs non-adjusting</span><div class="note">Adjusting events provide evidence of conditions existing at reporting date. Non-adjusting events arise after reporting date and may require disclosure if material.</div></div>
+    <div class="std important" data-search="ias 12 income tax"><strong>IAS 12 — Income Taxes</strong><span>Current & deferred tax</span><div class="note">Understand temporary differences, deferred tax assets/liabilities and recognition principles. Link tax effects to the underlying transaction.</div></div>
+    <div class="std important" data-search="ias 16 property plant equipment"><strong>IAS 16 — PPE</strong><span>Recognition, depreciation, revaluation</span><div class="note">Recognise when probable benefits and reliable measurement criteria are met. Depreciate significant components separately. Revaluation has specific OCI/P&L rules.</div></div>
+    <div class="std important" data-search="ias 19 employee benefits"><strong>IAS 19 — Employee Benefits</strong><span>Defined benefit accounting</span><div class="note">For defined benefits, understand service cost, net interest and remeasurement. Remeasurements are recognised in OCI and are not recycled.</div></div>
+    <div class="std important" data-search="ias 21 foreign exchange"><strong>IAS 21 — Foreign Exchange</strong><span>Functional & presentation currency</span><div class="note">Understand initial recognition, subsequent translation, foreign operations and exchange differences. Distinguish transaction effects from translation effects.</div></div>
+    <div class="std important" data-search="ias 23 borrowing costs"><strong>IAS 23 — Borrowing Costs</strong><span>Qualifying assets</span><div class="note">Capitalise directly attributable borrowing costs during the period of activities necessary to prepare a qualifying asset for intended use or sale.</div></div>
+    <div class="std important" data-search="ias 32 financial instruments presentation"><strong>IAS 32 — Financial Instruments</strong><span>Liability vs equity</span><div class="note">Classification depends on the contractual substance, especially the obligation to deliver cash or another financial asset. Convertible instruments can require split accounting.</div></div>
+    <div class="std important" data-search="ias 36 impairment"><strong>IAS 36 — Impairment</strong><span>CGU, recoverable amount</span><div class="note">Recoverable amount is higher of value in use and fair value less costs of disposal. Allocate goodwill to CGUs/groups of CGUs for impairment testing.</div></div>
+    <div class="std important" data-search="ias 37 provisions contingencies"><strong>IAS 37 — Provisions</strong><span>Present obligation + probable outflow</span><div class="note">Recognise a provision when there is a present obligation from a past event, probable outflow and reliable estimate. Contingent liabilities are generally disclosed, not recognised.</div></div>
+    <div class="std important" data-search="ias 38 intangible assets"><strong>IAS 38 — Intangibles</strong><span>Research vs development</span><div class="note">Research is expensed. Development costs are capitalised only when all recognition criteria are satisfied. Consider useful life and amortisation.</div></div>
+    <div class="std important" data-search="ias 40 investment property"><strong>IAS 40 — Investment Property</strong><span>Rental/capital appreciation</span><div class="note">Property held for rental income or capital appreciation. Under the fair value model, changes in fair value generally go to profit or loss.</div></div>
+    <div class="std important" data-search="ias 41 agriculture biological assets"><strong>IAS 41 — Agriculture</strong><span>Biological assets & produce</span><div class="note">Biological assets are generally measured at fair value less costs to sell, with changes recognised in profit or loss, subject to specific exceptions.</div></div>
+    <div class="std important" data-search="ifrs 3 business combinations"><strong>IFRS 3 — Business Combinations</strong><span>Acquisition method & goodwill</span><div class="note">Identify acquirer, acquisition date, consideration and identifiable net assets. Goodwill is broadly the residual after recognising identifiable net assets and relevant consideration/NCI.</div></div>
+    <div class="std important" data-search="ifrs 5 held for sale discontinued operations"><strong>IFRS 5 — Held for Sale</strong><span>Separate presentation & measurement</span><div class="note">A qualifying disposal group held for sale is generally measured at lower of carrying amount and fair value less costs to sell and is presented separately.</div></div>
+    <div class="std important" data-search="ifrs 9 financial instruments"><strong>IFRS 9 — Financial Instruments</strong><span>Classification, ECL, hedge accounting</span><div class="note">Know amortised cost/FVOCI/FVTPL classification, expected credit losses and basic hedge-accounting concepts. SBR often tests application and explanation.</div></div>
+    <div class="std important" data-search="ifrs 10 consolidated financial statements control"><strong>IFRS 10 — Consolidation</strong><span>Control = power + returns + link</span><div class="note">Control exists when the investor has power over the investee, exposure/rights to variable returns and ability to use power to affect those returns.</div></div>
+    <div class="std important" data-search="ifrs 11 joint arrangements"><strong>IFRS 11 — Joint Arrangements</strong><span>Joint operation vs joint venture</span><div class="note">Joint operation: rights to assets and obligations for liabilities. Joint venture: rights to net assets and generally equity accounting under IAS 28.</div></div>
+    <div class="std important" data-search="ifrs 13 fair value"><strong>IFRS 13 — Fair Value</strong><span>Exit price & hierarchy</span><div class="note">Fair value is an exit price in an orderly transaction between market participants at the measurement date. Know Levels 1, 2 and 3 inputs.</div></div>
+    <div class="std important" data-search="ifrs 15 revenue"><strong>IFRS 15 — Revenue</strong><span>Five-step model</span><div class="note">Identify contract, identify performance obligations, determine transaction price, allocate price, recognise revenue when/as performance obligations are satisfied.</div></div>
+    <div class="std important" data-search="ifrs 16 leases"><strong>IFRS 16 — Leases</strong><span>ROU asset + lease liability</span><div class="note">For lessees, most leases create a right-of-use asset and lease liability, subject to exemptions. Understand initial measurement and subsequent depreciation/interest.</div></div>
+    <div class="std important" data-search="ifrs 18 presentation disclosure financial statements"><strong>IFRS 18 — Presentation</strong><span>New presentation/disclosure requirements</span><div class="note">Introduces new presentation requirements including defined profit-or-loss subtotals and management-defined performance measures. Check the applicable ACCA exam syllabus and effective date.</div></div>
+  </div>
+</div>
+</section>
+
+<section id="priority">
+<div class="container">
+<div class="section-head"><h2>High-priority SBR standards</h2><p>Use this as a revision-focus list rather than a prediction of what will appear in your exam.</p></div>
+<div class="grid">
+  <div class="card important"><h3>Financial reporting core</h3><p>IAS 1 • IAS 8 • IAS 16 • IAS 36 • IAS 37 • IAS 38 • IAS 40 • IAS 41</p></div>
+  <div class="card important"><h3>Financial instruments</h3><p>IAS 32 • IFRS 7 • IFRS 9 — classification, measurement, ECL and hedge accounting.</p></div>
+  <div class="card important"><h3>Group reporting</h3><p>IFRS 3 • IFRS 10 • IFRS 11 • IAS 28 • IFRS 12 — control, acquisition, associates and disclosures.</p></div>
+  <div class="card important"><h3>Revenue & leases</h3><p>IFRS 15 and IFRS 16 — application, judgement, measurement and presentation.</p></div>
+  <div class="card important"><h3>Other major areas</h3><p>IAS 19 • IAS 20 • IAS 21 • IAS 23 • IAS 24 • IAS 33 • IFRS 5 • IFRS 13.</p></div>
+  <div class="card important"><h3>Current developments</h3><p>IFRS 18, sustainability reporting and other examinable current issues should be checked against the relevant ACCA syllabus/exam resources.</p></div>
+</div>
+</div>
+</section>
+
+<section id="planner">
+<div class="container">
+<div class="section-head"><h2>Final 15-day SBR revision planner</h2><p>A compact plan designed around standards + question practice + final exam technique.</p></div>
+<div class="planner">
+  <div class="day"><b>Day 15</b><p>IAS 1, IAS 8, IAS 10 + short questions.</p></div>
+  <div class="day"><b>Day 14</b><p>IAS 16, IAS 23 + PPE/revaluation question.</p></div>
+  <div class="day"><b>Day 13</b><p>IAS 36 + IAS 37 + impairment/provisions question.</p></div>
+  <div class="day"><b>Day 12</b><p>IAS 38, IAS 40, IAS 41 + application practice.</p></div>
+  <div class="day"><b>Day 11</b><p>IAS 19 + IAS 20 + employee benefits/government grants.</p></div>
+  <div class="day"><b>Day 10</b><p>IAS 21 + foreign currency and foreign operations.</p></div>
+  <div class="day"><b>Day 9</b><p>IAS 32, IFRS 7, IFRS 9 — financial instruments.</p></div>
+  <div class="day"><b>Day 8</b><p>IFRS 15 + IFRS 16 + integrated question.</p></div>
+  <div class="day"><b>Day 7</b><p>IFRS 3 + IFRS 10 — business combinations & consolidation.</p></div>
+  <div class="day"><b>Day 6</b><p>IAS 28 + IFRS 11 + IFRS 12 — associates/JVs/disclosures.</p></div>
+  <div class="day"><b>Day 5</b><p>IFRS 5, IFRS 13, IAS 33 + ethics.</p></div>
+  <div class="day"><b>Day 4</b><p>IFRS 18/current issues + examiner-report lessons.</p></div>
+  <div class="day"><b>Day 3</b><p>Full Section A practice + review mistakes.</p></div>
+  <div class="day"><b>Day 2</b><p>Full mock / past paper under time + technical review.</p></div>
+  <div class="day"><b>Day 1</b><p>Rapid standards revision, common points, ethics and exam technique. Sleep properly.</p></div>
+</div>
+</div>
+</section>
+
+<section id="quiz">
+<div class="container">
+<div class="section-head"><h2>Standard-wise SBR quiz</h2><p>Click an option to reveal the explanation. Questions are written for revision and are not official ACCA questions.</p></div>
+<div class="quiz">
+  <div class="question">
+    <b>1. Under IAS 36, recoverable amount is:</b>
+    <div class="options">
+      <button onclick="show(this)">A. Higher of carrying amount and fair value</button>
+      <button onclick="show(this)">B. Higher of value in use and fair value less costs of disposal</button>
+      <button onclick="show(this)">C. Lower of cost and NRV</button>
+    </div>
+    <div class="answer"><b>Answer: B.</b> IAS 36 defines recoverable amount as the higher of value in use and fair value less costs of disposal.</div>
+  </div>
+  <div class="question">
+    <b>2. Which item is normally recognised in OCI under IAS 19 for a defined benefit plan?</b>
+    <div class="options">
+      <button onclick="show(this)">A. Remeasurements</button>
+      <button onclick="show(this)">B. Current service cost</button>
+      <button onclick="show(this)">C. Net interest</button>
+    </div>
+    <div class="answer"><b>Answer: A.</b> Remeasurements are recognised in OCI and are not subsequently reclassified to profit or loss.</div>
+  </div>
+  <div class="question">
+    <b>3. Under IFRS 15, revenue is recognised when:</b>
+    <div class="options">
+      <button onclick="show(this)">A. Cash is received</button>
+      <button onclick="show(this)">B. The performance obligation is satisfied</button>
+      <button onclick="show(this)">C. An invoice is always issued</button>
+    </div>
+    <div class="answer"><b>Answer: B.</b> Revenue is recognised when or as the entity satisfies a performance obligation by transferring control of the promised good or service.</div>
+  </div>
+  <div class="question">
+    <b>4. Which feature is central to identifying control under IFRS 10?</b>
+    <div class="options">
+      <button onclick="show(this)">A. Only ownership of more than 50%</button>
+      <button onclick="show(this)">B. Power, variable returns and ability to use power to affect returns</button>
+      <button onclick="show(this)">C. Only board representation</button>
+    </div>
+    <div class="answer"><b>Answer: B.</b> Legal ownership percentage alone does not determine control; the IFRS 10 control model is broader.</div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="examiner">
+<div class="container">
+<div class="section-head"><h2>Examiner-report: things to learn</h2><p>General exam-technique reminders. Always read the latest ACCA examiner's reports for the applicable sitting.</p></div>
+<div class="grid">
+  <div class="card"><h3>Apply, don't just recite</h3><p>State the relevant accounting requirement, then apply it directly to the facts given in the scenario.</p></div>
+  <div class="card"><h3>Explain the impact</h3><p>Where relevant, explain the effect on profit or loss, OCI, assets, liabilities, equity, ratios or disclosures.</p></div>
+  <div class="card"><h3>Use professional judgement</h3><p>Identify the issue, discuss the relevant principle, consider the facts and reach a reasoned conclusion.</p></div>
+  <div class="card"><h3>Don't over-answer</h3><p>Allocate time to the marks available. Avoid writing long generic textbook paragraphs unrelated to the scenario.</p></div>
+  <div class="card"><h3>Show calculations clearly</h3><p>Set out workings and explain the accounting treatment. A correct number without an understandable approach may not fully demonstrate the required skill.</p></div>
+  <div class="card"><h3>Professional marks</h3><p>Use clear headings, logical structure, appropriate tone and a report/memo format where the requirement asks for it.</p></div>
+</div>
+</div>
+</section>
+
+<section id="kit">
+<div class="container">
+<div class="section-head"><h2>Kaplan Kit — question-to-standard map</h2><p>Use this section to record which standards are tested by each question. Add your own exact Kaplan question names/editions so the map stays aligned with your current kit.</p></div>
+<table>
+<thead><tr><th>Question / Case name</th><th>Main standard(s)</th><th>What to practise</th></tr></thead>
+<tbody>
+<tr><td>Q1 — Add your Kaplan question name</td><td><span class="tag">IAS 16</span><span class="tag">IAS 36</span></td><td>Recognition, measurement, impairment</td></tr>
+<tr><td>Q2 — Add your Kaplan question name</td><td><span class="tag">IFRS 9</span><span class="tag">IAS 32</span></td><td>Classification and financial instrument treatment</td></tr>
+<tr><td>Q3 — Add your Kaplan question name</td><td><span class="tag">IFRS 3</span><span class="tag">IFRS 10</span></td><td>Business combinations and consolidation</td></tr>
+<tr><td>Q4 — Add your Kaplan question name</td><td><span class="tag">IFRS 15</span></td><td>Five-step revenue model</td></tr>
+<tr><td>Q5 — Add your Kaplan question name</td><td><span class="tag">IFRS 16</span></td><td>Lease accounting and presentation</td></tr>
+</tbody>
+</table>
+<p class="disclaimer">The placeholder question names above are intentionally not presented as official Kaplan question titles. Replace them with the exact names/numbers from your licensed/current Kaplan kit.</p>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head"><h2>About this resource</h2><p>Built as a student-friendly SBR revision hub.</p></div>
+<div class="about">
+  <div class="callout">
+    <h2>Created by Hisham Rahman</h2>
+    <p>ACCA Finalist & Student Mentor</p>
+    <p>This free resource is designed to make SBR revision simpler: short standard reminders, structured revision, question mapping and exam-focused practice.</p>
+  </div>
+  <div class="card">
+    <h3>Important note</h3>
+    <p>This website is an independent student resource. ACCA, Kaplan and the IFRS Foundation are not affiliated with this site unless explicitly stated.</p>
+    <p>Always use the latest ACCA syllabus, technical articles, examiner reports and your current study text/kit for authoritative and examinable content.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  <b>ACCA SBR Resource Hub</b>
+  <p>Free revision support • Made for SBR students</p>
+  <p>© 2026 Hisham Rahman • ACCA Finalist & Student Mentor</p>
+</div>
+</footer>
+
+<script>
+document.querySelectorAll('.std').forEach(el=>{
+  el.addEventListener('click',()=>el.classList.toggle('open'));
+});
+document.getElementById('stdSearch').addEventListener('input', function(){
+  const q=this.value.toLowerCase();
+  document.querySelectorAll('.std').forEach(el=>{
+    el.style.display=el.dataset.search.includes(q) ? '' : 'none';
+  });
+});
+function show(btn){
+  const q=btn.closest('.question');
+  q.classList.add('revealed');
+  q.querySelectorAll('.options button').forEach(b=>b.disabled=true);
+}
+</script>
+</body>
+</html>
